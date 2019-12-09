@@ -6,6 +6,14 @@ set_color normal
 ln -sf ~/.dotfiles/.config/* ~/.config/
 
 set_color green
+echo Installing neovim requirements
+set color normal
+echo Installing vim-plug
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo Installing pynvim
+pip3 install --user pynvim
+
+set_color green
 echo Install OMF
 set_color normal
 curl -L https://get.oh-my.fish | fish
