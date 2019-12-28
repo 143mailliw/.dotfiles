@@ -26,6 +26,6 @@ omf install bobthefish
 set_color green
 echo Installing Hello theme
 set_color normal
-wget https://raw.githubusercontent.com/143mailliw/install-tool/patch-1/install.sh
+wget https://raw.githubusercontent.com/hello-kde/install-tool/master/install.sh
 bash install.sh
 rm install.sh
